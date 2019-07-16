@@ -10,15 +10,42 @@
         "6510b6e4-f144-40ac-beb0-3a26987e0d3d",
         "0a39964f-7c74-4989-aa23-76e1bbfadb10",
         "b2f400e6-ae66-4d61-8d58-262dd7ee27e9",
-        "8bed3543-43b6-4bec-a79d-b0027a5ffe8f"
+        "8bed3543-43b6-4bec-a79d-b0027a5ffe8f",
+        "31722092-b854-4119-aa5e-c4dd6dd3b4c9"
     ],
     "IsDnD": false,
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Game",
+            "id": "5be2aeb1-2a57-477d-9deb-3564677c3c29",
+            "depth": 0,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+{"name": "inst_4FDCF48E","id": "31722092-b854-4119-aa5e-c4dd6dd3b4c9","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_4FDCF48E","objId": "0a07dcca-e5e0-4211-ae43-cbeec34142dc","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 0,"y": 0}
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Instances",
             "id": "f9027656-e572-4699-8d86-71048ecb0e1a",
-            "depth": 0,
+            "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -47,7 +74,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Bullets",
             "id": "5007a496-2119-486e-bef1-9bcb9014d3a1",
-            "depth": 100,
+            "depth": 200,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -75,8 +102,8 @@
             "id": "655402d6-1337-4ecc-bce3-9c1db3e6f2f0",
             "animationFPS": 15,
             "animationSpeedType": "0",
-            "colour": { "Value": 4283058841 },
-            "depth": 200,
+            "colour": { "Value": 4278190080 },
+            "depth": 300,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

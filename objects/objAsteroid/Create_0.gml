@@ -1,6 +1,9 @@
 /// @description Asteroid Variables 
 
+ 
+
 //Pick a asteroid
+//if(!objectDestoryed)
 var spritePick = choose(sprAsteroidSmall, sprAsteroidSmall, sprAsteroidMedium, sprAsteroidLarge); 
 sprite_index = spritePick; 
 

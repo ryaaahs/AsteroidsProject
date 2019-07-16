@@ -1,4 +1,54 @@
-/// @description 
+/// @description Rock breaking functionality 
 
 // Create the Rock breaking functionality 
-
+var ranVal = choose(1, 2); 
+if(sprite_index == sprAsteroidLarge){
+	//Pick one of the options 
+	global.gameScore += 50; 
+	if(ranVal == 1){
+		repeat(irandom_range(2, 3)){
+			// Pick a random coord within the mask to spawn
+			var ranX = random_range(x - sprite_xoffset, x + sprite_xoffset);
+			var ranY = random_range(y - sprite_yoffset, y + sprite_yoffset);
+			
+			with(instance_create_layer(x, y, "Instances", objAsteroid)){
+				sprite_index = sprAsteroidMedium;	
+			}
+		}
+	}else{
+		global.gameScore += 50; 
+		repeat(irandom_range(1, 2)){
+			var ranX = random_range(x - sprite_xoffset, x + sprite_xoffset);
+			var ranY = random_range(y - sprite_yoffset, y + sprite_yoffset);
+			with(instance_create_layer(x, y, "Instances", objAsteroid)){
+				sprite_index = sprAsteroidMedium;	
+			}
+		}	
+	}
+}else if(sprite_index == sprAsteroidMedium){
+	if(ranVal == 1){
+		global.gameScore += 25; 
+		repeat(irandom_range(3, 4)){
+			// Pick a random coord within the mask to spawn
+			var ranX = random_range(x - sprite_xoffset, x + sprite_xoffset);
+			var ranY = random_range(y - sprite_yoffset, y + sprite_yoffset);
+			
+			with(instance_create_layer(x, y, "Instances", objAsteroid)){
+				sprite_index = sprAsteroidSmall;	
+			}
+		}
+	}else{
+		global.gameScore += 25;
+		repeat(irandom_range(2, 3)){
+			var ranX = random_range(x - sprite_xoffset, x + sprite_xoffset);
+			var ranY = random_range(y - sprite_yoffset, y + sprite_yoffset);
+			with(instance_create_layer(x, y, "Instances", objAsteroid)){
+				sprite_index = sprAsteroidSmall;	
+			}
+		}	
+	}
+}else if(sprite_index == sprAsteroidSmall){
+	//Destroy the instance 
+	global.gameScore += 5;
+	instance_destroy(); 
+}

@@ -39,6 +39,22 @@
             }
         },
         {
+            "Key": "093d4dae-0a10-4912-b944-56cc0533f3de",
+            "Value": {
+                "id": "73cbeef5-d368-4f99-a7ca-e60941063b8f",
+                "resourcePath": "objects\\objHUD\\objHUD.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "0a07dcca-e5e0-4211-ae43-cbeec34142dc",
+            "Value": {
+                "id": "c3c14d55-d498-4429-baba-c2a3526e2e57",
+                "resourcePath": "objects\\objGame\\objGame.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "14fb2886-19cc-4169-a7df-5871cf49a21c",
             "Value": {
                 "id": "3b0cf12c-d6af-44ad-a079-d964a42e467e",
