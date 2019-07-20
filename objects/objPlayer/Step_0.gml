@@ -10,6 +10,20 @@ keyShoot = keyboard_check(ord("K"));
 
 scrWrapping(); 
 
+//Player Invicibility 
+if(playerInvincibility){
+	sprite_index = sprPlayerInvicibility;
+	image_speed = 0.4; 
+	if(playerInvincibilityTick >= playerInvincibilityTimer){
+		playerInvincibility = false; 	
+	}else{
+		playerInvincibilityTick++; 
+	}
+}else{
+	sprite_index = sprPlayer;
+	image_speed = 1; 
+}
+
 //Shooting
 if(keyShoot){
 	if(instance_number(objBullet) < 5){

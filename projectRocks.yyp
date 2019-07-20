@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "cf84d0b7-d01e-4ca4-849a-633d7f0c755a",
+            "Value": {
+                "id": "dbb0db41-12dc-4273-b3c0-89f148e2f215",
+                "resourcePath": "fonts\\fntGameFont\\fntGameFont.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "d45c6172-1673-4319-ae94-7896a1652351",
             "Value": {
                 "id": "2d599849-4915-4fdf-a48c-87019b66a740",
@@ -276,6 +284,14 @@
                 "id": "338ffc59-51c4-4cf9-9062-0fa4f867edd5",
                 "resourcePath": "views\\f4a3d4fc-1d05-4faf-868f-920e27d7674e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f5dd39ef-c117-4b25-9052-bf9f9606a23d",
+            "Value": {
+                "id": "a1e9e117-80e1-43d8-8c24-791f211fd554",
+                "resourcePath": "sprites\\sprPlayerInvicibility\\sprPlayerInvicibility.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],
