@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "8051f359-1558-409a-945b-eed8351918ce",
+            "Value": {
+                "id": "11601b39-038f-4f6e-b15a-f68e0a6e0d0a",
+                "resourcePath": "objects\\objAsteroidSpawnerPoint\\objAsteroidSpawnerPoint.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a88c9c07-43a5-45c0-b3f6-41f18ca16c0e",
             "Value": {
                 "id": "8b7eb9c2-581e-4efe-9cb5-b49baf5f815f",
