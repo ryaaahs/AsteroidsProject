@@ -30,10 +30,11 @@ for(var i = 0; i < instance_number(objAsteroidSpawnerPoint); i++){
 	spawn[i] = instance_id_get(i); 			
 }
 
-//Global Variasbles 
+//Global Variables 
 global.gameScore = 0;
 global.gameHighScore = 0; 
 global.gameLives = 3;
+global.playerArmor = false; 
 global.totalAsteroidsDestoryed = 0; 
 global.totalShotsFired = 0;
 global.totalLivesLost = 0; 

@@ -1,6 +1,6 @@
 /// @description Get the variables for the HUD
 
-//  TEMP: USING A RATIO OF 512:288 FOR NOW
+//  TEMP: USING A RATIO OF 480:270 FOR NOW
 
 
 //Window is different to room width / height

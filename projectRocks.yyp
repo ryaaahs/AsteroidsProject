@@ -55,6 +55,22 @@
             }
         },
         {
+            "Key": "0ea4ca58-e42e-4321-b44c-5fc068961373",
+            "Value": {
+                "id": "36f59114-b3a6-42eb-9577-50b5481e3885",
+                "resourcePath": "sprites\\sprPlayerLivesHUD\\sprPlayerLivesHUD.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1360e35b-d72c-41da-8562-15e52da57e69",
+            "Value": {
+                "id": "9be0f458-d848-45d0-bdca-f44e0140a6a9",
+                "resourcePath": "sprites\\sprPlayerArmor\\sprPlayerArmor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "14fb2886-19cc-4169-a7df-5871cf49a21c",
             "Value": {
                 "id": "3b0cf12c-d6af-44ad-a079-d964a42e467e",
@@ -127,6 +143,14 @@
             }
         },
         {
+            "Key": "6549d0a8-ee29-4298-ac1b-7a94754b2a80",
+            "Value": {
+                "id": "dfd187a2-eb19-4c55-b5a8-6a29f009ccff",
+                "resourcePath": "sprites\\sprTempArmor\\sprTempArmor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6819d762-be77-439c-93d4-e5e6c280bdc0",
             "Value": {
                 "id": "d0e4c560-f65c-41a5-ae16-27315d65e5e9",
@@ -183,6 +207,14 @@
             }
         },
         {
+            "Key": "95318982-ef47-4a38-a94b-cbefa076588b",
+            "Value": {
+                "id": "673c884c-22f3-440b-93ab-4028bfef40c9",
+                "resourcePath": "objects\\objTempArmor\\objTempArmor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a88c9c07-43a5-45c0-b3f6-41f18ca16c0e",
             "Value": {
                 "id": "8b7eb9c2-581e-4efe-9cb5-b49baf5f815f",
@@ -212,6 +244,14 @@
                 "id": "bfe17062-a1a1-44f5-a3e0-578d4f48f2d7",
                 "resourcePath": "views\\aedaaf20-4001-443d-8f62-a08e4fbcb0d8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c07b72c5-f35b-4d20-949d-1d6d753154f3",
+            "Value": {
+                "id": "9892aba2-1dfe-4b8c-bc04-3623b6c09017",
+                "resourcePath": "sprites\\sprPlayerArmorHUD\\sprPlayerArmorHUD.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -16,12 +16,19 @@ if(playerInvincibility){
 	image_speed = 0.4; 
 	if(playerInvincibilityTick >= playerInvincibilityTimer){
 		playerInvincibility = false; 	
+		playerInvincibilityTick = 0; 
 	}else{
 		playerInvincibilityTick++; 
 	}
 }else{
-	sprite_index = sprPlayer;
-	image_speed = 1; 
+	
+	//Sprite checking to see if we Armor
+	if(!global.playerArmor){
+		sprite_index = sprPlayer;
+		image_speed = 1; 
+	}else{
+		sprite_index = sprPlayerArmor; 	
+	}
 }
 
 //Shooting
