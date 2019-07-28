@@ -38,6 +38,7 @@ global.playerArmor = false;
 global.totalAsteroidsDestoryed = 0; 
 global.totalShotsFired = 0;
 global.totalLivesLost = 0; 
+global.playerDeath = false; 
 
 //Spawner Variables 
 asteroidSpawnStageOne = room_speed * 2; 

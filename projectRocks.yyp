@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "1a4ddac3-b899-4f48-aa4f-2d275bbb5f3a",
+            "Value": {
+                "id": "56345eb8-ad3a-45db-8955-50ccaf7a270b",
+                "resourcePath": "fonts\\fntGameFontSmall\\fntGameFontSmall.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "1fe124da-657c-442c-aa51-09193be217e0",
             "Value": {
                 "id": "a427c0cf-3608-4bcc-989e-6bc110287b2e",

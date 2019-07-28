@@ -10,9 +10,7 @@ if(!instance_exists(objPlayer)){
 			playerInvincibility = true; 	
 		}
 	}else{
-		//end the game
-		//display score and highscore
-		//and maybe some other things 
+		global.playerDeath = true;
 	}
 }
 
