@@ -1,5 +1,6 @@
 /// @description 
-
+//Temp 
+global.gameHighScore = global.gameScore; 
 
 //Respawn the player if lives > 0
 if(!instance_exists(objPlayer)){

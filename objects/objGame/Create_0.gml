@@ -31,7 +31,7 @@ for(var i = 0; i < instance_number(objAsteroidSpawnerPoint); i++){
 }
 
 //Global Variables 
-global.gameScore = 0;
+global.gameScore = 900;
 global.gameHighScore = 0; 
 global.gameLives = 3;
 global.playerArmor = false; 

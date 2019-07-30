@@ -1,7 +1,27 @@
 /// @description Draw the HUD
 draw_set_font(fntGameFont); 
-draw_text(10, 8, "SCORE: " + string(global.gameScore)); 
+draw_set_valign(fa_middle);
+draw_set_halign(fa_center);
 
+
+if(global.gameScore <= 10){
+	draw_text(60, 20, "SCORE: " + string(global.gameScore));
+}else if(global.gameScore  <= 100){
+	draw_text(68, 20, "SCORE: " + string(global.gameScore)); 
+}else if(global.gameScore  <= 1000){
+	draw_text(80, 20, "SCORE: " + string(global.gameScore)); 
+}else if(global.gameScore  <= 10000){
+	draw_text(85, 20, "SCORE: " + string(global.gameScore)); 	
+}
+
+
+if(global.gameHighScore <= 10){
+	draw_text(430, 20, "HS: " + string(global.gameHighScore)); 
+}else if(global.gameHighScore <= 1000){
+	draw_text(425, 20, "HS: " + string(global.gameHighScore)); 
+}else if(global.gameHighScore <= 10000){
+	draw_text(420, 20, "HS: " + string(global.gameHighScore));	
+}
 
 
 //Draws the Life hud for the player, in both states (Armored/Not Armored) 
@@ -17,8 +37,6 @@ if(global.playerArmor){
 //Player Death
 if(global.playerDeath){
 	// Display the text
-	draw_set_valign(fa_middle);
-	draw_set_halign(fa_center);
 	
 	draw_text_color(room_width / 2, room_height / 2 - 64, "GAME OVER", c_red, c_red, c_red, c_red, 1); 
 	// Display the Score / if new Highscore (Maybe with a cool pop up)
@@ -32,7 +50,5 @@ if(global.playerDeath){
 	
 	//Reset the text alignment / Font
 	draw_set_font(fntGameFont); 
-	draw_set_valign(fa_top);
-	draw_set_halign(fa_left);
 }
 
