@@ -5,6 +5,7 @@
     "name": "aedaaf20-4001-443d-8f62-a08e4fbcb0d8",
     "children": [
         "cf84d0b7-d01e-4ca4-849a-633d7f0c755a",
+        "6e0d7952-34ab-453e-8bf4-2e84abf697a8",
         "1a4ddac3-b899-4f48-aa4f-2d275bbb5f3a"
     ],
     "filterType": "GMFont",
