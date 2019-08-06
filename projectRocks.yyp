@@ -231,10 +231,18 @@
             }
         },
         {
+            "Key": "8a912e67-8a82-4165-bc7d-059a83ff7382",
+            "Value": {
+                "id": "d8c8202c-215b-42a6-a1e1-0a9a2513e80d",
+                "resourcePath": "objects\\objSettings\\objSettings.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "95318982-ef47-4a38-a94b-cbefa076588b",
             "Value": {
                 "id": "673c884c-22f3-440b-93ab-4028bfef40c9",
-                "resourcePath": "objects\\objTempArmor\\objTempArmor.yy",
+                "resourcePath": "objects\\objArmor\\objArmor.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -372,6 +380,14 @@
                 "id": "a1e9e117-80e1-43d8-8c24-791f211fd554",
                 "resourcePath": "sprites\\sprPlayerInvicibility\\sprPlayerInvicibility.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "feb51334-32ce-4018-a2b0-4637477bdb5f",
+            "Value": {
+                "id": "f9216600-3cb5-43ff-9cdd-5f3e3600cf4d",
+                "resourcePath": "rooms\\rmSettings\\rmSettings.yy",
+                "resourceType": "GMRoom"
             }
         }
     ],

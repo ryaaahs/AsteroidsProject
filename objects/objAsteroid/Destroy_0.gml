@@ -4,7 +4,9 @@
 var ranVal = choose(1, 2); 
 if(sprite_index == sprAsteroidLarge){
 	//Pick one of the options 
+	var shieldSpawn = irandom_range(1, 100); 
 	global.gameScore += 50; 
+	
 	if(ranVal == 1){
 		repeat(irandom_range(2, 3)){
 			// Pick a random coord within the mask to spawn
@@ -25,7 +27,13 @@ if(sprite_index == sprAsteroidLarge){
 			}
 		}	
 	}
+	
+	if(shieldSpawn <= 10){
+		instance_create_layer(x, y, "Instances", objArmor); 	
+	}
 }else if(sprite_index == sprAsteroidMedium){
+	var shieldSpawn = irandom_range(1, 100); 
+	
 	if(ranVal == 1){
 		global.gameScore += 25; 
 		repeat(irandom_range(3, 4)){
@@ -46,6 +54,10 @@ if(sprite_index == sprAsteroidLarge){
 				sprite_index = sprAsteroidSmall;	
 			}
 		}	
+	}
+	
+	if(shieldSpawn <= 5){
+		instance_create_layer(x, y, "Instances", objArmor); 	
 	}
 }else if(sprite_index == sprAsteroidSmall){
 	//Destroy the instance 

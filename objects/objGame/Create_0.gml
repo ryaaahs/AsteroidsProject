@@ -3,6 +3,23 @@
 instance_create_layer(x, y, "Game", objHUD);
 randomize(); 
 
+
+//Global Variables 
+global.gameScore = 0;
+global.gameHighScore = 0; 
+global.gameLives = 3;
+global.playerArmor = false; 
+global.totalAsteroidsDestoryed = 0; 
+global.totalShotsFired = 0;
+global.totalLivesLost = 0; 
+global.playerDeath = false; 
+
+
+//Open the ini file and reads the highscore
+ini_open("gameFiles.ini"); 
+global.gameHighScore = ini_read_real("game", "highscore", 5);
+ini_close(); 
+
 //Spawn 2-3 Starting Asteroids 
 repeat(irandom_range(3, 4)){
 	var _chooseX = choose(1, 2); 
@@ -30,28 +47,16 @@ for(var i = 0; i < instance_number(objAsteroidSpawnerPoint); i++){
 	spawn[i] = instance_id_get(i); 			
 }
 
-//Global Variables 
-global.gameScore = 0;
-global.gameHighScore = 0; 
-global.gameLives = 3;
-global.playerArmor = false; 
-global.totalAsteroidsDestoryed = 0; 
-global.totalShotsFired = 0;
-global.totalLivesLost = 0; 
-global.playerDeath = false; 
+
 
 //Spawner Variables 
-asteroidSpawnStageOne = room_speed * 2; 
-asteroidSpawnStageTwo = room_speed ;
+asteroidSpawnStageOne = room_speed * 4; 
+asteroidSpawnStageTwo = room_speed  * 2;
+asteroidSpawnStageThree = room_speed;
 /*
-asteroidSpawnStageThree = room_speed / 2;
+
 asteroidSpawnStageFour = room_speed / 3;
 asteroidSpawnStageFive = room_speed / 4;
 */
 asteroidTimerTick = 0; 
 
-//Resolution 
-alarm[0] = 1; 
-window_set_size(1920,1080); 
-surface_resize(application_surface, 1920, 1080);
-window_set_fullscreen(true); 

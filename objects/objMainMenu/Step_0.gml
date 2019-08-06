@@ -34,7 +34,7 @@ if(keyboard_check_pressed(vk_enter)){
 		break; 
 	
 		case 2:
-			//Do nothing currently (Settings) 
+			room_goto(rmSettings);
 		break;
 	
 		case 3:

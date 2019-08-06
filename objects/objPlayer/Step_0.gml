@@ -55,10 +55,10 @@ if(shootTimer <= shootTimerAmount){
 if(keyLeft && keyRight){
 	//Nothing	
 }else if(keyLeft){
-	direction += 1; 
+	direction += 2; 
 	image_angle = direction; 
 }else if(keyRight){
-	direction -= 1; 
+	direction -= 2; 
 	image_angle = direction; 
 }
 

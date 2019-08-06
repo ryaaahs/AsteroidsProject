@@ -1,8 +1,11 @@
 /// @description 
-//Temp 
-global.gameHighScore = global.gameScore; 
 
 //Respawn the player if lives > 0
+
+if(global.gameScore > global.gameHighScore){
+	global.gameHighScore = global.gameScore		
+}
+
 if(!instance_exists(objPlayer)){
 	global.gameLives -= 1; 
 	if(global.gameLives > 0){
@@ -11,6 +14,11 @@ if(!instance_exists(objPlayer)){
 			playerInvincibility = true; 	
 		}
 	}else{
+		//Save the highscore when the player dies 
+		ini_open("gameFiles.ini"); 
+		ini_write_real("game", "highscore", global.gameHighScore);
+		ini_close(); 
+		
 		global.playerDeath = true;
 	}
 }
@@ -41,8 +49,17 @@ if(global.gameScore <= 1000){
 	}else{
 		asteroidTimerTick++; 	
 	}
-}else if(global.gameScore <= 5000){
+}else if(global.gameScore <= 2500){
 	if(asteroidTimerTick >= asteroidSpawnStageTwo){
+		//Pick a spawner 
+		var _spawn = irandom_range(0, 3); 
+		instance_create_layer(spawn[_spawn].x, spawn[_spawn].y, "Instances", objAsteroid);
+		asteroidTimerTick = 0; 
+	}else{
+		asteroidTimerTick++; 	
+	}
+}else if(global.gameScore <= 4000){
+	if(asteroidTimerTick >= asteroidSpawnStageThree){
 		//Pick a spawner 
 		var _spawn = irandom_range(0, 3); 
 		instance_create_layer(spawn[_spawn].x, spawn[_spawn].y, "Instances", objAsteroid);
