@@ -1,5 +1,4 @@
-/// @description Create the game Objects
-// Also state the global variables
+////Create the game Objects // Global Variables 
 instance_create_layer(x, y, "Game", objHUD);
 randomize(); 
 
@@ -9,10 +8,11 @@ global.gameScore = 0;
 global.gameHighScore = 0; 
 global.gameLives = 3;
 global.playerArmor = false; 
+global.playerDeath = false; 
+//Data Variables(*Not used currently)
 global.totalAsteroidsDestoryed = 0; 
 global.totalShotsFired = 0;
 global.totalLivesLost = 0; 
-global.playerDeath = false; 
 
 
 //Open the ini file and reads the highscore
@@ -42,7 +42,9 @@ repeat(irandom_range(3, 4)){
 
 
 //Create an array to store the id of the spawn points
-//Allows you to move the instance round, then pick a set point
+/*This system allows you to move the instance round to pick a spawn point
+	and have any amount of spawn points, you may want 
+*/ 
 for(var i = 0; i < instance_number(objAsteroidSpawnerPoint); i++){
 	spawn[i] = instance_id_get(i); 			
 }

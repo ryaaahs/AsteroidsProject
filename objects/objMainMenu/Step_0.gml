@@ -1,5 +1,4 @@
-/// @description 
-
+////Menu System
 if(arrowTimerTick >= arrowTimer){
 	if(arrowState == "Right"){
 		arrowState = "Left"; 

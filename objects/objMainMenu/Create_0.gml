@@ -1,6 +1,4 @@
-/// @description 
-
-//Main menu Variables
+////Main menu Variables
 menuTag[0] = "Play";
 menuTag[1] = "Settings";
 menuTag[2] = "Exit";

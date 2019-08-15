@@ -1,5 +1,3 @@
-/// @description 
-show_debug_message(playerMovement); 
 ////Movement
 //Player Keys
 keyRight = keyboard_check(ord("D")); 

@@ -1,5 +1,4 @@
-/// @description Player variables 
-
+////Player Variables
 playerInvincibility = false; 
 playerInvincibilityTimer = room_speed * 2;  
 playerInvincibilityTick = 0;

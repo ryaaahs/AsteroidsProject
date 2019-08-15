@@ -1,4 +1,4 @@
-/// @description 
+/// * - Change to GUI 
 draw_set_font(fntGameFontBig); 
 draw_set_valign(fa_middle);
 draw_set_halign(fa_center);

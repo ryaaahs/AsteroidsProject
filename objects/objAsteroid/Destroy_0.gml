@@ -1,8 +1,10 @@
-/// @description Rock breaking functionality 
+////Rock breaking functionality 
 
 // Create the Rock breaking functionality 
 var ranVal = choose(1, 2); 
+
 if(sprite_index == sprAsteroidLarge){
+	
 	//Pick one of the options 
 	var shieldSpawn = irandom_range(1, 100); 
 	global.gameScore += 50; 
@@ -28,9 +30,11 @@ if(sprite_index == sprAsteroidLarge){
 		}	
 	}
 	
+	//TEMP
 	if(shieldSpawn <= 10){
 		instance_create_layer(x, y, "Instances", objArmor); 	
 	}
+	
 }else if(sprite_index == sprAsteroidMedium){
 	var shieldSpawn = irandom_range(1, 100); 
 	
@@ -60,7 +64,6 @@ if(sprite_index == sprAsteroidLarge){
 		instance_create_layer(x, y, "Instances", objArmor); 	
 	}
 }else if(sprite_index == sprAsteroidSmall){
-	//Destroy the instance 
 	global.gameScore += 5;
 	instance_destroy(); 
 }

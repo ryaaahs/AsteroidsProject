@@ -1,5 +1,3 @@
-/// @description 
-
 //Respawn the player if lives > 0
 
 if(global.gameScore > global.gameHighScore){
@@ -27,12 +25,14 @@ if(!instance_exists(objPlayer)){
 // Create the Asteroid Spawn 
 
 
-// Check the score 
-	// Spawn in the right amount of Asteroids for said score
-	// Keep in check on how many instances are in play for said score
-	// and or other instances also (Items / Enemies / etc ) 
+/*Check the score 
 	
-// If no asteroids are in play, spawn 2 - 3 more
+	- Spawn in the right amount of Asteroids for said score
+	- Keep in check on how many instances are in play for said score
+	- and or other instances also (Items / Enemies / etc ) 
+	If no asteroids are in play, spawn 2 - 3 more
+
+*/
 if(!instance_exists(objAsteroid)){
 	repeat(choose(3, 4, 5)){
 		var _spawn = irandom_range(0, 3); 

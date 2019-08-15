@@ -1,5 +1,4 @@
-/// @description 
-
+////Setting System
 if(arrowTimerTick >= arrowTimer){
 	if(arrowState == "Right"){
 		arrowState = "Left"; 
@@ -39,6 +38,7 @@ if(keyboard_check_pressed(vk_enter)){
 				alarm[0] = 1; 
 			}else{
 				window_set_fullscreen(true);
+				window_set_size(1920, 1080); 
 				surface_resize(application_surface, 1920, 1080);
 			}
 			

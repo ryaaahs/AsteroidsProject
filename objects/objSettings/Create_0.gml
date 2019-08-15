@@ -1,6 +1,4 @@
-/// @description 
-
-//Main menu Variables
+////System menu Variables
 menuTag[0] = "Fullscreen";
 menuTag[1] = "480x270";
 menuTag[2] = "960x540";

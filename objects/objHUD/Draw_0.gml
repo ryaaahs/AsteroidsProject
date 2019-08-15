@@ -1,9 +1,10 @@
 /// @description Draw the HUD
+/// **Spend some time changing this to a GUI Draw event than a draw event
 draw_set_font(fntGameFont); 
 draw_set_valign(fa_middle);
 draw_set_halign(fa_center);
 
-
+//Score // Highscore Display
 if(global.gameScore <= 10){
 	draw_text(60, 20, "SCORE: " + string(global.gameScore));
 }else if(global.gameScore  <= 100){
@@ -33,22 +34,14 @@ if(global.playerArmor){
 	}
 }
 
-//* Note; we'll have to save the highscore before we save the highscore using a ini file 
-//Player Death
 if(global.playerDeath){
-	// Display the text
 	
+	// Display death text
 	draw_text_color(room_width / 2, room_height / 2 - 64, "GAME OVER", c_red, c_red, c_red, c_red, 1); 
-	// Display the Score / if new Highscore (Maybe with a cool pop up)
 	draw_set_font(fntGameFontSmall);
 	draw_text_color(room_width / 2, room_height / 2 - 32, "SCORE: " + string(global.gameScore), c_yellow, c_yellow, c_yellow, c_yellow, 1); 
-	// How to reset the game
 	draw_text_color(room_width / 2, room_height / 2, "PRESS 'R' TO RESTART THE GAME", c_red, c_red, c_red, c_red, 1); 
-	// Return to the menu 
 	
-	
-	
-	//Reset the text alignment / Font
 	draw_set_font(fntGameFont); 
 }
 
