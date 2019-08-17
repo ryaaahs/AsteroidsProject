@@ -6,13 +6,13 @@ draw_set_halign(fa_center);
 
 //Score // Highscore Display
 if(global.gameScore <= 10){
-	draw_text(60, 20, "SCORE: " + string(global.gameScore));
+	draw_text(62, 20, "SCORE: " + string(global.gameScore));
 }else if(global.gameScore  <= 100){
-	draw_text(68, 20, "SCORE: " + string(global.gameScore)); 
+	draw_text(70, 20, "SCORE: " + string(global.gameScore)); 
 }else if(global.gameScore  <= 1000){
-	draw_text(80, 20, "SCORE: " + string(global.gameScore)); 
+	draw_text(76, 20, "SCORE: " + string(global.gameScore)); 
 }else if(global.gameScore  <= 10000){
-	draw_text(85, 20, "SCORE: " + string(global.gameScore)); 	
+	draw_text(81, 20, "SCORE: " + string(global.gameScore)); 	
 }
 
 
@@ -27,10 +27,10 @@ if(global.gameHighScore <= 10){
 
 //Draws the Life hud for the player, in both states (Armored/Not Armored) 
 if(global.playerArmor){
-	draw_sprite_ext(sprPlayerArmorHUD, global.gameLives, 12, 36, 1, 1, 0, c_white, 1); 
+	draw_sprite_ext(sprPlayerArmorHUD, global.gameLives, 6, 36, 1, 1, 0, c_white, 1); 
 }else{
 	if(global.gameLives > 0){
-		draw_sprite_ext(sprPlayerLivesHUD, global.gameLives, 12, 36, 1, 1, 0, c_white, 1); 	
+		draw_sprite_ext(sprPlayerLivesHUD, global.gameLives, 6, 36, 1, 1, 0, c_white, 1); 	
 	}
 }
 

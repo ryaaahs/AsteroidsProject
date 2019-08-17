@@ -4,9 +4,9 @@
 
 //Pick a asteroid
 //if(!objectDestoryed)
-var spritePick = choose(sprAsteroidMedium, sprAsteroidMedium, sprAsteroidLarge); 
+spritePick = choose(sprAsteroidMedium, sprAsteroidMedium, sprAsteroidLarge); 
 image_speed = 0; 
-var indexPick = choose(0, 1, 2, 3);
+indexPick = choose(0, 1, 2, 3);
 sprite_index = spritePick; 
 image_index = indexPick
 

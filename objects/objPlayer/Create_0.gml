@@ -8,3 +8,5 @@ playerDrag = 0.05;
 playerAccel = 0.2;
 shootTimer = 0; 
 shootTimerAmount = room_speed / 4; 
+trailTimer = 0;
+trailTimerAmount = room_speed / 8; 

@@ -8,6 +8,15 @@ keyShoot = keyboard_check(ord("K"));
 
 scrWrapping(); 
 
+
+//Player Trail
+if(trailTimer >= trailTimerAmount){
+	instance_create_layer(x - lengthdir_x(sprite_xoffset, direction), y - lengthdir_y(sprite_yoffset, direction), "Instances", objTrail);	
+	trailTimer = 0;
+}else{
+	trailTimer++; 	
+}
+
 //Player Invicibility 
 if(playerInvincibility){
 	sprite_index = sprPlayerInvicibility;

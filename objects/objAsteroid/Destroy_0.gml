@@ -16,7 +16,9 @@ if(sprite_index == sprAsteroidLarge){
 			var ranY = random_range(y - sprite_yoffset, y + sprite_yoffset);
 			
 			with(instance_create_layer(x, y, "Instances", objAsteroid)){
-				sprite_index = sprAsteroidMedium;	
+				sprite_index = sprAsteroidMedium;
+				spritePick = sprAsteroidMedium;
+				indexPick = choose(0, 1, 2, 3);
 			}
 		}
 	}else{
@@ -25,7 +27,9 @@ if(sprite_index == sprAsteroidLarge){
 			var ranX = random_range(x - sprite_xoffset, x + sprite_xoffset);
 			var ranY = random_range(y - sprite_yoffset, y + sprite_yoffset);
 			with(instance_create_layer(x, y, "Instances", objAsteroid)){
-				sprite_index = sprAsteroidMedium;	
+				sprite_index = sprAsteroidMedium;
+				spritePick = sprAsteroidMedium; 
+				indexPick = choose(0, 1, 2, 3);
 			}
 		}	
 	}
@@ -46,7 +50,9 @@ if(sprite_index == sprAsteroidLarge){
 			var ranY = random_range(y - sprite_yoffset, y + sprite_yoffset);
 			
 			with(instance_create_layer(x, y, "Instances", objAsteroid)){
-				sprite_index = sprAsteroidSmall;	
+				sprite_index = sprAsteroidSmall;
+				spritePick = sprAsteroidSmall;
+				indexPick = choose(0, 1, 2, 3);
 			}
 		}
 	}else{
@@ -55,7 +61,9 @@ if(sprite_index == sprAsteroidLarge){
 			var ranX = random_range(x - sprite_xoffset, x + sprite_xoffset);
 			var ranY = random_range(y - sprite_yoffset, y + sprite_yoffset);
 			with(instance_create_layer(x, y, "Instances", objAsteroid)){
-				sprite_index = sprAsteroidSmall;	
+				sprite_index = sprAsteroidSmall;
+				spritePick = sprAsteroidSmall;
+				indexPick = choose(0, 1, 2, 3);
 			}
 		}	
 	}
