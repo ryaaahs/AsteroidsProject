@@ -75,3 +75,16 @@ if(sprite_index == sprAsteroidLarge){
 	global.gameScore += 5;
 	instance_destroy(); 
 }
+
+// Asteroid Particles 
+if(spritePick == sprAsteroidSmall || spritePick == sprAsteroidMedium){
+	repeat(irandom_range(3, 5)){
+		var instParticle = choose(objSmallGray, objSmallLightGray, objMedGray, objMedLightGray); 
+		instance_create_layer(x + random_range(-sprite_xoffset, sprite_xoffset), y + random_range(-sprite_yoffset, sprite_yoffset), "Instances", instParticle);  	
+	}
+}else{
+	repeat(irandom_range(5, 7)){
+		var instParticle = choose(objMedGray, objMedLightGray, objLargeGray, objLargeLightGray); 
+		instance_create_layer(x + random_range(-sprite_xoffset, sprite_xoffset), y + random_range(-sprite_yoffset, sprite_yoffset), "Instances", instParticle);  	
+	}	
+}

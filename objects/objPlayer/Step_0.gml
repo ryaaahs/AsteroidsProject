@@ -3,7 +3,7 @@
 keyRight = keyboard_check(ord("D")); 
 keyLeft = keyboard_check(ord("A")); 
 keyMove = keyboard_check(ord("W")); 
-keyShoot = keyboard_check(ord("K")); 
+
 //keyBomb? 
 
 scrWrapping(); 
@@ -36,26 +36,6 @@ if(playerInvincibility){
 	}else{
 		sprite_index = sprPlayerArmor; 	
 	}
-}
-
-//Shooting
-if(keyShoot){
-	if(instance_number(objBullet) < 5){
-		if(shootTimer > shootTimerAmount){
-			with(instance_create_layer(x, y, "Bullets", objBullet)){
-				var player = objPlayer;
-				speed = 8; 
-				direction = player.direction; 
-				alarm[0] = room_speed * 2; 
-			}
-			
-			shootTimer = 0; 	
-		}
-	}
-}
-
-if(shootTimer <= shootTimerAmount){
-	shootTimer++; 	
 }
 
 //Rot

@@ -1,2 +1,2 @@
 instance_destroy(); 
-instance_create_layer(x, y, "Instances", objTrail); 
+instance_create_layer(x, y, "Instances", objBulletDecay); 

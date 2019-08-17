@@ -16,8 +16,6 @@ if(!instance_exists(objPlayer)){
 		ini_open("gameFiles.ini"); 
 		ini_write_real("game", "highscore", global.gameHighScore);
 		ini_close(); 
-		
-		global.playerDeath = true;
 	}
 }
 
