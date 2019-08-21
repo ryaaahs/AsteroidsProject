@@ -2,6 +2,12 @@
 instance_create_layer(x, y, "Game", objHUD);
 randomize(); 
 
+//TEMP
+window_set_size(1920, 1080); 
+window_set_fullscreen(true); 
+surface_resize(application_surface, 960, 540);
+alarm[0] = 1; 
+
 
 //Global Variables 
 global.gameScore = 0;
@@ -21,6 +27,7 @@ global.gameHighScore = ini_read_real("game", "highscore", 5);
 ini_close(); 
 
 //Spawn 2-3 Starting Asteroids 
+/*
 repeat(irandom_range(3, 4)){
 	var _chooseX = choose(1, 2); 
 	var _chooseY = choose(1, 2); 
@@ -38,7 +45,7 @@ repeat(irandom_range(3, 4)){
 	}
 	
 	instance_create_layer(_placementX, _placementY, "Instances", objAsteroid); 
-}
+}*/
 
 
 //Create an array to store the id of the spawn points

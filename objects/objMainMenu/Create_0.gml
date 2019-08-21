@@ -3,6 +3,11 @@ menuTag[0] = "Play";
 menuTag[1] = "Settings";
 menuTag[2] = "Exit";
 
+
+window_set_size(960, 540); 
+surface_resize(application_surface, 960, 540);
+alarm[0] = 1; 
+
 arrowPlacement = 1; 
 arrowPlacementChange = false; 
 arrowTimer = room_speed; 

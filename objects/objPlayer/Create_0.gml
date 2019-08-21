@@ -10,6 +10,9 @@ shootTimer = 0;
 shootTimerAmount = room_speed / 4; 
 trailTimer = 0;
 trailTimerAmount = room_speed / 8; 
+angle = 0; 
+vspd = 0;
+hspd = 0; 
 
 playerDeathAmount = room_speed; 
 playerDeathTick = 0; 

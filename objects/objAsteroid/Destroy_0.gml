@@ -88,3 +88,12 @@ if(spritePick == sprAsteroidSmall || spritePick == sprAsteroidMedium){
 		instance_create_layer(x + random_range(-sprite_xoffset, sprite_xoffset), y + random_range(-sprite_yoffset, sprite_yoffset), "Instances", instParticle);  	
 	}	
 }
+
+//Dust
+for(var i = 0; i < 360; i++){
+	var dir = i; 
+	with(instance_create_layer(x, y, "Instances", objDust)){
+		direction = dir;
+	}
+	i++
+}
