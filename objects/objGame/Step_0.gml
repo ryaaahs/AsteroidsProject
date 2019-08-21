@@ -5,8 +5,8 @@ if(global.gameScore > global.gameHighScore){
 }
 
 if(!instance_exists(objPlayer)){
-	global.gameLives -= 1; 
 	if(global.gameLives > 0){
+		global.gameLives -= 1; 
 		var playerInst = instance_create_layer(room_width / 2, room_height / 2, "Player", objPlayer)
 		with(playerInst){
 			playerInvincibility = true; 	
@@ -31,14 +31,14 @@ if(!instance_exists(objPlayer)){
 	If no asteroids are in play, spawn 2 - 3 more
 
 */
-/*
+
 if(!instance_exists(objAsteroid)){
 	repeat(choose(3, 4, 5)){
 		var _spawn = irandom_range(0, 3); 
 		instance_create_layer(spawn[_spawn].x, spawn[_spawn].y, "Asteroids", objAsteroid);	
 	}
-}*/
-/*
+}
+
 if(global.gameScore <= 1000){
 	if(asteroidTimerTick >= asteroidSpawnStageOne){
 		//Pick a spawner 
@@ -67,4 +67,3 @@ if(global.gameScore <= 1000){
 		asteroidTimerTick++; 	
 	}
 }
-*/

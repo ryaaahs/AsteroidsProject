@@ -3,8 +3,7 @@ instance_create_layer(x, y, "Game", objHUD);
 randomize(); 
 
 //TEMP
-window_set_size(1920, 1080); 
-window_set_fullscreen(true); 
+window_set_size(960, 540); 
 surface_resize(application_surface, 960, 540);
 alarm[0] = 1; 
 
@@ -27,7 +26,6 @@ global.gameHighScore = ini_read_real("game", "highscore", 5);
 ini_close(); 
 
 //Spawn 2-3 Starting Asteroids 
-/*
 repeat(irandom_range(3, 4)){
 	var _chooseX = choose(1, 2); 
 	var _chooseY = choose(1, 2); 
@@ -45,15 +43,16 @@ repeat(irandom_range(3, 4)){
 	}
 	
 	instance_create_layer(_placementX, _placementY, "Asteroids", objAsteroid); 
-}*/
+}
 
 
 //Create an array to store the id of the spawn points
 /*This system allows you to move the instance round to pick a spawn point
 	and have any amount of spawn points, you may want 
 */ 
+
 for(var i = 0; i < instance_number(objAsteroidSpawnerPoint); i++){
-	spawn[i] = instance_id_get(i); 			
+	spawn[i] = instance_find(objAsteroidSpawnerPoint, i); 		
 }
 
 
@@ -62,8 +61,8 @@ for(var i = 0; i < instance_number(objAsteroidSpawnerPoint); i++){
 asteroidSpawnStageOne = room_speed * 4; 
 asteroidSpawnStageTwo = room_speed  * 2;
 asteroidSpawnStageThree = room_speed;
-/*
 
+/*
 asteroidSpawnStageFour = room_speed / 3;
 asteroidSpawnStageFive = room_speed / 4;
 */

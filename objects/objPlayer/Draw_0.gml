@@ -36,5 +36,8 @@ if(playerInvincibility){
 }
 
 //draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,false);
+//Debug stuff
+/*
 draw_sprite_ext(sprPlayerMask, 0, x, y, 1, 1, 0, c_white, 0.5); 
-draw_text(x, y - 16, string(playerMovement)); 
+draw_text(x, y - 16, string(global.gameLives)); 
+*/
