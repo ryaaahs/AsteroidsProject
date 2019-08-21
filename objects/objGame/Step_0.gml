@@ -7,7 +7,7 @@ if(global.gameScore > global.gameHighScore){
 if(!instance_exists(objPlayer)){
 	global.gameLives -= 1; 
 	if(global.gameLives > 0){
-		var playerInst = instance_create_layer(room_width / 2, room_height / 2, "Instances", objPlayer)
+		var playerInst = instance_create_layer(room_width / 2, room_height / 2, "Player", objPlayer)
 		with(playerInst){
 			playerInvincibility = true; 	
 		}
@@ -35,7 +35,7 @@ if(!instance_exists(objPlayer)){
 if(!instance_exists(objAsteroid)){
 	repeat(choose(3, 4, 5)){
 		var _spawn = irandom_range(0, 3); 
-		instance_create_layer(spawn[_spawn].x, spawn[_spawn].y, "Instances", objAsteroid);	
+		instance_create_layer(spawn[_spawn].x, spawn[_spawn].y, "Asteroids", objAsteroid);	
 	}
 }*/
 /*
@@ -43,7 +43,7 @@ if(global.gameScore <= 1000){
 	if(asteroidTimerTick >= asteroidSpawnStageOne){
 		//Pick a spawner 
 		var _spawn = irandom_range(0, 3); 
-		instance_create_layer(spawn[_spawn].x, spawn[_spawn].y, "Instances", objAsteroid);
+		instance_create_layer(spawn[_spawn].x, spawn[_spawn].y, "Asteroids", objAsteroid);
 		asteroidTimerTick = 0; 
 	}else{
 		asteroidTimerTick++; 	
@@ -52,7 +52,7 @@ if(global.gameScore <= 1000){
 	if(asteroidTimerTick >= asteroidSpawnStageTwo){
 		//Pick a spawner 
 		var _spawn = irandom_range(0, 3); 
-		instance_create_layer(spawn[_spawn].x, spawn[_spawn].y, "Instances", objAsteroid);
+		instance_create_layer(spawn[_spawn].x, spawn[_spawn].y, "Asteroids", objAsteroid);
 		asteroidTimerTick = 0; 
 	}else{
 		asteroidTimerTick++; 	
@@ -61,7 +61,7 @@ if(global.gameScore <= 1000){
 	if(asteroidTimerTick >= asteroidSpawnStageThree){
 		//Pick a spawner 
 		var _spawn = irandom_range(0, 3); 
-		instance_create_layer(spawn[_spawn].x, spawn[_spawn].y, "Instances", objAsteroid);
+		instance_create_layer(spawn[_spawn].x, spawn[_spawn].y, "Asteroids", objAsteroid);
 		asteroidTimerTick = 0; 
 	}else{
 		asteroidTimerTick++; 	

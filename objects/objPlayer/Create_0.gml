@@ -2,6 +2,11 @@
 playerInvincibility = false; 
 playerInvincibilityTimer = room_speed * 2;  
 playerInvincibilityTick = 0;
+
+playerInvincibilityAnimationTimer = room_speed/4;  
+playerInvincibilityAnimationTick = 0;
+animationFrame = 0; 
+
 playerMaxAccel = 4; 
 playerMovement = 0; 
 playerDrag = 0.05; 

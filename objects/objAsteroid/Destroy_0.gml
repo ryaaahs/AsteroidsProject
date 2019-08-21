@@ -15,7 +15,7 @@ if(sprite_index == sprAsteroidLarge){
 			var ranX = random_range(x - sprite_xoffset, x + sprite_xoffset);
 			var ranY = random_range(y - sprite_yoffset, y + sprite_yoffset);
 			
-			with(instance_create_layer(x, y, "Instances", objAsteroid)){
+			with(instance_create_layer(x, y, "Asteroids", objAsteroid)){
 				sprite_index = sprAsteroidMedium;
 				spritePick = sprAsteroidMedium;
 				indexPick = choose(0, 1, 2, 3);
@@ -26,7 +26,7 @@ if(sprite_index == sprAsteroidLarge){
 		repeat(irandom_range(1, 2)){
 			var ranX = random_range(x - sprite_xoffset, x + sprite_xoffset);
 			var ranY = random_range(y - sprite_yoffset, y + sprite_yoffset);
-			with(instance_create_layer(x, y, "Instances", objAsteroid)){
+			with(instance_create_layer(x, y, "Asteroids", objAsteroid)){
 				sprite_index = sprAsteroidMedium;
 				spritePick = sprAsteroidMedium; 
 				indexPick = choose(0, 1, 2, 3);
@@ -36,7 +36,7 @@ if(sprite_index == sprAsteroidLarge){
 	
 	//TEMP
 	if(shieldSpawn <= 10){
-		instance_create_layer(x, y, "Instances", objArmor); 	
+		instance_create_layer(x, y, "Items", objArmor); 	
 	}
 	
 }else if(sprite_index == sprAsteroidMedium){
@@ -49,7 +49,7 @@ if(sprite_index == sprAsteroidLarge){
 			var ranX = random_range(x - sprite_xoffset, x + sprite_xoffset);
 			var ranY = random_range(y - sprite_yoffset, y + sprite_yoffset);
 			
-			with(instance_create_layer(x, y, "Instances", objAsteroid)){
+			with(instance_create_layer(x, y, "Asteroids", objAsteroid)){
 				sprite_index = sprAsteroidSmall;
 				spritePick = sprAsteroidSmall;
 				indexPick = choose(0, 1, 2, 3);
@@ -60,7 +60,7 @@ if(sprite_index == sprAsteroidLarge){
 		repeat(irandom_range(2, 3)){
 			var ranX = random_range(x - sprite_xoffset, x + sprite_xoffset);
 			var ranY = random_range(y - sprite_yoffset, y + sprite_yoffset);
-			with(instance_create_layer(x, y, "Instances", objAsteroid)){
+			with(instance_create_layer(x, y, "Asteroids", objAsteroid)){
 				sprite_index = sprAsteroidSmall;
 				spritePick = sprAsteroidSmall;
 				indexPick = choose(0, 1, 2, 3);
@@ -69,7 +69,7 @@ if(sprite_index == sprAsteroidLarge){
 	}
 	
 	if(shieldSpawn <= 5){
-		instance_create_layer(x, y, "Instances", objArmor); 	
+		instance_create_layer(x, y, "Items", objArmor); 	
 	}
 }else if(sprite_index == sprAsteroidSmall){
 	global.gameScore += 5;
@@ -80,19 +80,19 @@ if(sprite_index == sprAsteroidLarge){
 if(spritePick == sprAsteroidSmall || spritePick == sprAsteroidMedium){
 	repeat(irandom_range(3, 5)){
 		var instParticle = choose(objSmallGray, objSmallLightGray, objMedGray, objMedLightGray); 
-		instance_create_layer(x + random_range(-sprite_xoffset, sprite_xoffset), y + random_range(-sprite_yoffset, sprite_yoffset), "Instances", instParticle);  	
+		instance_create_layer(x + random_range(-sprite_xoffset, sprite_xoffset), y + random_range(-sprite_yoffset, sprite_yoffset), "Particles", instParticle);  	
 	}
 }else{
 	repeat(irandom_range(5, 7)){
 		var instParticle = choose(objMedGray, objMedLightGray, objLargeGray, objLargeLightGray); 
-		instance_create_layer(x + random_range(-sprite_xoffset, sprite_xoffset), y + random_range(-sprite_yoffset, sprite_yoffset), "Instances", instParticle);  	
+		instance_create_layer(x + random_range(-sprite_xoffset, sprite_xoffset), y + random_range(-sprite_yoffset, sprite_yoffset), "Particles", instParticle);  	
 	}	
 }
 
 //Dust
 for(var i = 0; i < 360; i++){
 	var dir = i; 
-	with(instance_create_layer(x, y, "Instances", objDust)){
+	with(instance_create_layer(x, y, "Particles", objDust)){
 		direction = dir;
 	}
 	i++

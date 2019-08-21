@@ -7,7 +7,7 @@ if(global.gameLives <= 0){
 }
 repeat(irandom_range(8, 10)){
 	var instParticle = choose(objSmallRed, objSmallOrange, objMedRed, objMedOrange); 
-	with(instance_create_layer(x + random_range(-sprite_xoffset, sprite_xoffset), y + random_range(-sprite_yoffset, sprite_yoffset), "Instances", instParticle)){
+	with(instance_create_layer(x + random_range(-sprite_xoffset, sprite_xoffset), y + random_range(-sprite_yoffset, sprite_yoffset), "Particles", instParticle)){
 		decay = 0.02; 	
 	}
 }	

@@ -1,15 +1,8 @@
 ////Movement
 //Player Keys
-
-
-
 keyRight = keyboard_check(ord("D")); 
 keyLeft = keyboard_check(ord("A")); 
 keyMove = keyboard_check(ord("W")); 
-
-
-hspd = lengthdir_x(playerMovement, direction);
-vspd = lengthdir_y(playerMovement, direction);
 //keyBomb? 
 
 scrWrapping(); 
@@ -17,32 +10,12 @@ scrWrapping();
 
 //Player Trail
 if(trailTimer >= trailTimerAmount){
-	instance_create_layer(x - lengthdir_x(sprite_xoffset, direction), y - lengthdir_y(sprite_yoffset, direction), "Instances", objTrail);	
+	instance_create_layer(x - lengthdir_x(sprite_xoffset, direction), y - lengthdir_y(sprite_yoffset, direction), "Particles", objTrail);	
 	trailTimer = 0;
 }else{
 	trailTimer++; 	
 }
 
-//Player Invicibility 
-if(playerInvincibility){
-	sprite_index = sprPlayerInvicibility;
-	image_speed = 0.4; 
-	if(playerInvincibilityTick >= playerInvincibilityTimer){
-		playerInvincibility = false; 	
-		playerInvincibilityTick = 0; 
-	}else{
-		playerInvincibilityTick++; 
-	}
-}else{
-	
-	//Sprite checking to see if we Armor
-	if(!global.playerArmor){
-		sprite_index = sprPlayer;
-		image_speed = 1; 
-	}else{
-		sprite_index = sprPlayerArmor; 	
-	}
-}
 
 //Rot
 if(keyLeft && keyRight){
@@ -68,31 +41,33 @@ if(!keyMove){
 }else{
 	//Reset it when moving 
 	if(playerMovement < playerMaxAccel){
-		 playerMovement += playerAccel; 	
+		playerMovement += playerAccel; 		
 	}
 }
+// If it goes over the max, reset it
+if(playerMovement > playerMaxAccel){
+	playerMovement = playerMaxAccel; 
+}
+hspd = lengthdir_x(playerMovement, angle);
+vspd = lengthdir_y(playerMovement, angle);
 
 ///Player Collision 
 //x
-
 if(place_meeting(x + hspd, y, objSolid)){
 	while(!place_meeting(x + sign(hspd), y, objSolid)){
-		x += lengthdir_x(sign(hspd), direction);
+		x += sign(hspd);
 	}
 	hspd = 0; 
 }
-
+x += hspd
 
 //y
 if(place_meeting(x, y + vspd, objSolid)){
 	while(!place_meeting(x, y + sign(vspd), objSolid)){
-		y += lengthdir_y(sign(vspd), direction); 
+		y += sign(vspd); 
 	}
 	vspd = 0; 
 }
-
-
-x += hspd
 y += vspd;
  
 

@@ -44,7 +44,7 @@ repeat(irandom_range(3, 4)){
 		var _placementY = random_range(224, room_height); 
 	}
 	
-	instance_create_layer(_placementX, _placementY, "Instances", objAsteroid); 
+	instance_create_layer(_placementX, _placementY, "Asteroids", objAsteroid); 
 }*/
 
 
