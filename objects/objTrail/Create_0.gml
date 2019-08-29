@@ -1,3 +1,3 @@
 /// @description 
-image_speed = 0.25; 
+image_speed = 0.4; 
  
