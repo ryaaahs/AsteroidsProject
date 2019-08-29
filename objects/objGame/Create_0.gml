@@ -3,8 +3,9 @@ instance_create_layer(x, y, "Game", objHUD);
 randomize(); 
 
 //TEMP
-window_set_size(960, 540); 
-surface_resize(application_surface, 960, 540);
+window_set_size(1920, 1080); 
+window_set_fullscreen(true); 
+surface_resize(application_surface, 1920, 1080);
 alarm[0] = 1; 
 
 
